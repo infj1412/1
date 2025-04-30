@@ -1,13 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int num;
-    printf("êµ¬êµ¬ë‹¨ì„ ì¶œë ¥í•  ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
-    scanf("%d", &num);
+    int n;
+    printf("Á¤¼öÀÇ ÇÕÀ» ±¸ÇÒ ¼ıÀÚÀÇ °³¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+    scanf("%d", &n);
 
-    for (int i = 1; i <= 9; i++) {
-        printf("%d x %d = %d\n", num, i, num * i);
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum += i;
     }
+
+    printf("1ºÎÅÍ %d±îÁöÀÇ ÇÕÀº: %d\n", n, sum);
 
     return 0;
 }
