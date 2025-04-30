@@ -1,16 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    printf("정수의 합을 구할 숫자의 개수를 입력하세요: ");
-    scanf("%d", &n);
+    int num;
+    printf("숫자를 입력하세요: ");
+    scanf("%d", &num);
 
-    int sum = 0;
-    for (int i = 1; i <= n; i++) {
-        sum += i;
+    if (num % 2 == 0) {
+        printf("%d은 짝수입니다.\n", num);
+    } else {
+        printf("%d은 홀수입니다.\n", num);
     }
-
-    printf("1부터 %d까지의 합은: %d\n", n, sum);
 
     return 0;
 }
